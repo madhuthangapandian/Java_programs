@@ -1,0 +1,228 @@
+//1(Factorial)
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		int num = sc.nextInt();
+		int fact = 1;
+		for(int i = 1;i<=num;i++){
+		    fact = fact * i;
+		}
+		System.out.println(fact);
+	}
+}
+
+//2 (Input and Output Practice)
+import java.util.*;
+
+public class Main {
+    public static void main(String[] args) {
+      Scanner obj = new Scanner(System.in);
+      int a = obj.nextInt();
+      float b = obj.nextFloat();
+      char c = obj.next().charAt(0);
+      long d = obj.nextLong();
+      double e = obj.nextDouble();
+      System.out.println(a);
+      System.out.println(b);
+      System.out.println(c);
+      System.out.println(d);
+      System.out.println(e);
+
+}
+}
+
+//3(Progressive Float Execution)
+import java.util.*;
+
+public class Main {
+    public static void main(String[] args) {
+      Scanner obj = new Scanner(System.in);
+      float a = obj.nextFloat();
+      System.out.printf("%.5f\n", a);
+      System.out.printf("%.4f\n", a);
+      System.out.printf("%.3f\n", a);
+      System.out.printf("%.2f\n", a);
+      System.out.printf("%.1f\n", a);
+      System.out.printf("%.0f\n", a);
+      
+
+  }
+}
+
+//4(Sum, Difference, Product, Division and Modulo)
+import java.util.*;
+
+public class Main {
+    public static void main(String[] args) {
+     Scanner obj = new Scanner(System.in);
+     int a = obj.nextInt();
+     int b = obj.nextInt();
+     System.out.println(a+b);
+     System.out.println(a-b);
+     System.out.println(a*b);
+     System.out.println(a/b);
+     System.out.println(a%b);
+}
+}
+
+//5(ASCII)
+import java.util.*;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int a = sc.nextInt();
+        System.out.println((char)a);
+
+  }
+}
+
+//6(Update Counter)
+import java.util.*;
+
+public class Main {
+    public static void main(String[] args) {
+      Scanner sc = new Scanner(System.in);
+      int a = sc.nextInt();
+      System.out.println(((a+5)*2)-3);
+
+  }
+}
+
+//7(ODD OR EVEN)
+import java.util.*;
+
+public class Main {
+    public static void main(String[] args) {
+     Scanner sc = new Scanner(System.in);
+     int a = sc.nextInt();
+     if(a%2==0)
+      System.out.println("Even");
+     else
+     System.out.println("Odd");
+  }
+}
+
+//8(Greatest among three numbers)
+import java.util.*;
+
+public class Main {
+    public static void main(String[] args) {
+      Scanner sc = new Scanner(System.in);
+      int a = sc.nextInt();
+      int b = sc.nextInt();
+      int c = sc.nextInt();
+      if (a>b && a>c)
+      System.out.println(a);
+      else if (b>a && b>c)
+      System.out.println(b);
+      else
+      System.out.println(c);
+  }
+}
+
+//9(Character digit to Integer)
+import java.util.*;
+
+public class Main {
+    public static void main(String[] args) {
+      Scanner sc = new Scanner(System.in);
+      char a = sc.next().charAt(0);
+
+      System.out.println((int)a-48);
+  }
+}
+
+//10(Personalized Greeting)
+import java.util.*;
+
+public class Main {
+    public static void main(String[] args) {
+      Scanner sc = new Scanner(System.in);
+      String a = sc.next();
+      System.out.println("Hi "+a+", welcome to the programming class!");
+  }
+}
+
+//11(Calculate Total and average Marks)
+import java.util.*;
+
+public class Main {
+    public static void main(String[] args) {
+      Scanner sc = new Scanner(System.in);
+      String a = sc.next();
+      int b = sc.nextInt();
+      int c = sc.nextInt();
+      int d = sc.nextInt();
+      int e = sc.nextInt();
+      int f = sc.nextInt();
+      int total = b + c + d + e + f;
+      double average = total / 5.0;
+      System.out.println("Student Name: " +a);
+      System.out.println("Total Marks: " +total);
+      System.out.printf("Average Marks: %.2f\n",average);
+  }
+}
+
+//12(Shape Area Calculation)
+import java.util.*;
+
+public class Main {
+    public static void main(String[] args) {
+      Scanner obj = new Scanner(System.in);
+      int a = obj.nextInt();
+      int l = obj.nextInt();
+      int b = obj.nextInt();
+      int r = obj.nextInt();
+      int B = obj.nextInt();
+      int h = obj.nextInt();
+      double pi=3.14;
+      System.out.println("Area of Square="+(a*a));
+      System.out.println("Area of Rectangle="+(l*b));
+      System.out.printf("Area of Circle=%.2f\n",pi*Math.pow(r,2));
+      System.out.println("Area of Triangle="+(int)((0.5)*B*h));
+    }
+}
+
+//13(Shape Permiter Calculation)
+import java.util.*;
+
+class ShapePerimeter {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        
+        int a = sc.nextInt();   
+        int l = sc.nextInt();   
+        int w = sc.nextInt();   
+        int r = sc.nextInt();   
+        int b1 = sc.nextInt();  
+        int s = sc.nextInt();   
+        int b2 = sc.nextInt();  
+
+        int square = 4 * a;
+        int rectangle = 2 * (l + w);
+        double circle = 2 * 3.14 * r;
+        int triangle = b1 + s + b2;
+
+        System.out.println(square);
+        System.out.println(rectangle);
+        System.out.printf("%.2f\n", circle);
+        System.out.println(triangle);
+    }
+}
+
+//13(Handling mixed Inputs in Java)
+import java.util.*;
+
+public class Main {
+    public static void main(String[] args) {
+      Scanner obj = new Scanner(System.in);
+      int a = obj.nextInt();
+      obj.nextLine();
+      String s = obj.nextLine();
+      System.out.println(a);
+      System.out.println(s);
+  }
+}
